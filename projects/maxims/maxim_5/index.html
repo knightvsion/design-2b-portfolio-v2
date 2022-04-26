@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link= rel="stylesheet" href="style.css"> 
+    <title>Red Light Green Light</title>
+    <a href ="../maxim_6/index.html">Next</a>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image:
+            linear-gradient(45deg, #ccc 25%, transparent 25%), 
+            linear-gradient(135deg, #ccc 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #ccc 75%),
+            linear-gradient(135deg, transparent 75%, #ccc 75%);
+            background-size:25px 25px; /* Must be a square */
+            background-position:0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px; /* Must be half of one side of the square */
+     }
+ 
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+ 
+        .go {
+            font-size: 5em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: transparent;
+            text-align: center;
+            animation: effect 6s linear infinite;
+        }
+
+        @keyframes effect {
+        0% {
+            background: linear-gradient(
+                #808080, #000000);
+            -webkit-background-clip: text;
+        }
+ 
+        100% {
+            background: linear-gradient(
+                #008000, #00FF00);
+            -webkit-background-clip: text;
+        }
+    }
+
+        .slow {
+            font-size: 5em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: transparent;
+            text-align: center;
+            animation: slow 4s linear infinite;
+        }
+
+        @keyframes slow {
+        0% {
+            background: linear-gradient(
+                #808080, #000000);
+            -webkit-background-clip: text;
+        }
+ 
+        100% {
+            background: linear-gradient(
+                #FFFFA7, #FFFF00);
+            -webkit-background-clip: text;
+        }
+    }
+
+        .stop {
+            font-size: 5em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: transparent;
+            text-align: center;
+            animation: stop 2s linear infinite;
+        }
+
+        @keyframes stop {
+        0% {
+            background: linear-gradient(
+                #808080, #000000);
+            -webkit-background-clip: text;
+        }
+ 
+        100% {
+            background: linear-gradient(
+                #FFCCCB, #FF0000);
+            -webkit-background-clip: text;
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 class="stop">READY</h2>
+        <style>
+            .stop {
+                text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+            }
+        </style>
+        <h2 class="slow">SET</h2>
+        <style>
+            .slow {
+                text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+            }
+        </style>
+        <h2 class="go">GO!</h2>
+        <style>
+            .go {
+                text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+            }
+        </style>
+    </div>
+</body>
+
+</html>
